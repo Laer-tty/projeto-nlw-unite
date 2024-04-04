@@ -69,8 +69,8 @@ const criarNovoParticipante = (participante) => {
   if (participante.dataCheckIn == null) {
     dataCheckIn = `
     <button 
-      data-email="${participante.email}
-      "onClick="fazerCheckIn(event)"
+      data-email="${participante.email}"
+      onClick="fazerCheckIn(event)"
     
     >
       Confirmar check-in
@@ -90,9 +90,9 @@ const criarNovoParticipante = (participante) => {
         ${participante.email}
       </small>
     </td>
-    <td>${dataInscricao}</th>
-    <td>${dataCheckIn}</th>
-  </tr>`;
+    <td>${dataInscricao}</td>
+    <td>${dataCheckIn}</td>
+  </tr>`
 }
 
 const atualizarLista = (participantes) => {
