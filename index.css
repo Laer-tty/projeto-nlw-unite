@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --border: 1px solid #ffffff1a;
+}
+
+body, table, input, button {
+  font: 350 14px/150% 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #121214;
+  color: rgb(245, 245, 245);
+}
+
+.container {
+  max-width: 690px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+header {
+  padding: 20px 0;
+}
+
+form {
+  border: var(--border);
+  border-inline: none;
+  padding: 20px 0;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset > div {
+  display: flex;
+  gap: 12px;
+}
+
+.input-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  border: var(--border);
+  border-radius: 10px;
+  
+  padding: 8px 12px;
+  font: 400 14px/150% 'Montserrat', sans-serif;
+  color: whitesmoke;
+}
+
+input {
+  all: unset
+}
+
+fieldset button {
+  width: fit-content;
+  border: 0;
+  background: #f48f56;
+  border-radius: 10px;
+  padding: 7px 10px;
+
+  font: 700 12px/24px 'Montserrat', sans-serif;
+  color: #00292e;
+}
+
+fieldset button:hover {
+  background: #da6827;
+}
+
+.lista-participantes {
+  padding: 20px 0;
+}
+
+.lista-participantes > div {
+  border: var(--border);
+  border-radius: 8px;
+}
+
+fieldset legend, section h2 {
+  font: 700 16px/140% 'Montserrat', sans-serif;
+  color: e1e1e6;
+  padding-bottom: 16px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead tr{
+  font-size: 16px;
+  line-height: 16px;
+}
+
+thead th, tbody td {
+  padding: 12px 5px;
+}
+
+tbody td {
+  border-top: var(--border);
+}
+
+tbody td strong {
+  color: white;
+  font-size: 15px;
+  line-height: 16px;
+}
+
+tbody td small {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+tbody td button {
+  all: unset;
+  color: rgb(59, 172, 59);
+}
+
+tbody td button:hover {
+  text-decoration: underline;
+}
